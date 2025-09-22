@@ -1,0 +1,14 @@
+name: SSH brute force - many failed logins from same IP
+type: frequency
+index: filebeat-*
+num_events: 5
+timeframe:
+  minutes: 1
+filter:
+- query:
+    query_string:
+      query: 'message:"Failed password" OR msg:"Failed password"'
+alert:
+- "email"
+realert:
+  minutes: 2
