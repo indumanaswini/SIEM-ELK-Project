@@ -105,7 +105,7 @@ SIEM-ELK-Project/
 ## ⚙️ Setup & Installation
 
 ### 1. Clone repository
-```bash
+
 git clone https://github.com/your-username/SIEM-ELK-Project.git
 cd SIEM-ELK-Project
 
@@ -146,3 +146,20 @@ Example rule: detect more than 5 failed SSH logins from same IP in 1 minute
 Alerts written into elastalert_status index
 
 Can be visualized in Kibana
+
+
+
+🚨 Use Cases
+
+Detect brute-force SSH attacks
+
+Track user login activity
+
+Monitor suspicious IP addresses
+
+Extendable for other logs (web server, firewall, Windows events)
+
+🏁 Conclusion
+
+This project demonstrates a miniature SIEM using open-source tools.
+It covers log generation, ingestion, parsing, storage, visualization, and alerting — the full pipeline of a SOC workflow.
